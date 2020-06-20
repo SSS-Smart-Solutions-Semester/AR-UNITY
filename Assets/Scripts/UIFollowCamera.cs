@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class UIFollowCamera : MonoBehaviour
 {
-    public Transform target;
-    private bool m_IstargetNotNull;
+    private Camera _target;
+    private bool _mIsTargetNotNull;
 
 
     private void Start()
     {
-        m_IstargetNotNull = target != null;
+        _mIsTargetNotNull = _target != null;
+        _target = Camera.main;
     }
 
-    void Update()
+    private void Update()
     {
-        if (m_IstargetNotNull)
-        {
-            transform.rotation = target.rotation;
-        }
+        if (_mIsTargetNotNull)
+            transform.rotation = _target.transform.rotation;
+        
     }
 }

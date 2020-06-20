@@ -113,7 +113,6 @@ GameObject:
   - component: {fileID: 1498808319}
   - component: {fileID: 1498808318}
   - component: {fileID: 1498808317}
-  - component: {fileID: 6810534941977600730}
   m_Layer: 5
   m_Name: Height
   m_TagString: Untagged
@@ -273,25 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d18acc0e6733448af7a7b7e321a937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
---- !u!114 &6810534941977600730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498808315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c2333d7803aa774dbce2117a07c9578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  height: 1
-  width: 0
-  length: 0
-  cube: {fileID: 7685788574822234692}
-  green: {r: 0, g: 1, b: 0, a: 0.19607843}
-  red: {r: 1, g: 0, b: 0, a: 0.19607843}
 --- !u!1 &1700176541
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +284,6 @@ GameObject:
   - component: {fileID: 1700176545}
   - component: {fileID: 1700176544}
   - component: {fileID: 1700176543}
-  - component: {fileID: 6390092520022544579}
   m_Layer: 5
   m_Name: Width
   m_TagString: Untagged
@@ -464,25 +443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d18acc0e6733448af7a7b7e321a937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
---- !u!114 &6390092520022544579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700176541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c2333d7803aa774dbce2117a07c9578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  height: 0
-  width: 1
-  length: 0
-  cube: {fileID: 7685788574822234692}
-  green: {r: 0, g: 1, b: 0, a: 0.19607843}
-  red: {r: 1, g: 0, b: 0, a: 0.19607843}
 --- !u!1 &2140997627
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +455,6 @@ GameObject:
   - component: {fileID: 2140997631}
   - component: {fileID: 2140997630}
   - component: {fileID: 2140997629}
-  - component: {fileID: 3502366722067537921}
   m_Layer: 5
   m_Name: Lenght
   m_TagString: Untagged
@@ -655,25 +614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d18acc0e6733448af7a7b7e321a937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
---- !u!114 &3502366722067537921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140997627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c2333d7803aa774dbce2117a07c9578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  height: 0
-  width: 0
-  length: 1
-  cube: {fileID: 7685788574822234692}
-  green: {r: 0, g: 1, b: 0, a: 0.19607843}
-  red: {r: 1, g: 0, b: 0, a: 0.19607843}
 --- !u!1 &7685788574822234692
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +627,7 @@ GameObject:
   - component: {fileID: 7040780845343574270}
   - component: {fileID: 7408830154894404708}
   - component: {fileID: 7685788574822234695}
+  - component: {fileID: 4170535818767851778}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -793,3 +734,23 @@ MonoBehaviour:
   StateUpdated:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4170535818767851778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7685788574822234692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2333d7803aa774dbce2117a07c9578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  green: {r: 0, g: 1, b: 0, a: 0.19607843}
+  red: {r: 1, g: 0, b: 0, a: 0.19607843}
+  heightText: {fileID: 1498808318}
+  widthText: {fileID: 1700176544}
+  lengthText: {fileID: 2140997630}
+  measuredHeight: 0
+  measuredWidth: 0
+  measuredLength: 0
