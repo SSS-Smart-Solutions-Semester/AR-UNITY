@@ -43,7 +43,7 @@ public class MeasureButtonController : MonoBehaviour
         height.text = measuredHeight.ToString(CultureInfo.InvariantCulture);
         length.text = measuredLength.ToString(CultureInfo.InvariantCulture);
 
-        if (measuredHeight > 55 || measuredWidth > 40 || measuredLength > 20)
+        if (measuredHeight > 55 || measuredWidth > 20 || measuredLength > 40)
         {
             _text.text =
                 "Oops... Your bag does not fit the dimensions of \n TUI Fly. Verify if the dimensions are correct by \n rescanning the luggage.";

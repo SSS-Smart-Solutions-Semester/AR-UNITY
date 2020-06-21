@@ -747,8 +747,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1665362962}
-        m_MethodName: DeactivatePanel
+      - m_Target: {fileID: 1665362964}
+        m_MethodName: QuitApp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1665362962}
-        m_MethodName: DeactivatePanel
+      - m_Target: {fileID: 1665362964}
+        m_MethodName: RescanAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2748,6 +2748,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelFinish: {fileID: 1698229132}
   topObject: {fileID: 0}
+  width: {fileID: 827333850}
+  height: {fileID: 162850469}
+  length: {fileID: 878670923}
 --- !u!1 &1698229131
 GameObject:
   m_ObjectHideFlags: 0
