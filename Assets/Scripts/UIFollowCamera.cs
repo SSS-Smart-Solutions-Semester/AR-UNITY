@@ -17,7 +17,7 @@ public class UIFollowCamera : MonoBehaviour
     private void Update()
     {
         if (_mIsTargetNotNull)
-            transform.rotation = _target.transform.rotation;
-        
+            transform.LookAt(_target.transform);
+
     }
 }
