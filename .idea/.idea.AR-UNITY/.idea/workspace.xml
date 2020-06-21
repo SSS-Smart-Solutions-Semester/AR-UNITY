@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b6ea118-6184-44b3-8547-1ed8d800f2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PanelFinishController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/Examples/Common/Scripts/DetectedPlaneGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/DetectedPlane.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeasureObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MeasureObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UiFollowCamera.cs" />
       </list>
     </option>
   </component>
@@ -71,6 +70,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -100,7 +100,7 @@
       <workItem from="1592211469462" duration="598000" />
       <workItem from="1592387067417" duration="3286000" />
       <workItem from="1592648496457" duration="4350000" />
-      <workItem from="1592770532299" duration="1495000" />
+      <workItem from="1592770532299" duration="1993000" />
     </task>
     <servers />
   </component>
@@ -133,24 +133,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592772145018" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs</url>
-          <line>7</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" initialLine="7">
-            <startOffsets>
-              <option value="146" />
-            </startOffsets>
-            <endOffsets>
-              <option value="167" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="461" y="165" key="SettingsEditor" timestamp="1592772240943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592772240943" />
   </component>
 </project>
