@@ -1,23 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
-public class UIFollowCamera : MonoBehaviour
+public class UiFollowCamera : MonoBehaviour
 {
     private Camera _target;
-    private bool _mIsTargetNotNull;
 
+    private void Awake() => _target = Camera.main;
 
-    private void Start()
-    {
-        _mIsTargetNotNull = _target != null;
-        _target = Camera.main;
-    }
-
-    private void Update()
-    {
-        if (_mIsTargetNotNull)
-            transform.LookAt(_target.transform);
-
-    }
+    private void Update() => transform.DOLookAt(_target.transform.forward, 0);
 }

@@ -19,6 +19,9 @@ public class MeasureButtonController : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _text;
 
+    [SerializeField] private Color green;
+    [SerializeField] private Color red;
+
     private float measuredWidth;
     private float measuredHeight;
     private float measuredLength;
@@ -47,17 +50,18 @@ public class MeasureButtonController : MonoBehaviour
         {
             _text.text =
                 "Oops... Your bag does not fit the dimensions of \n TUI Fly. Verify if the dimensions are correct by \n rescanning the luggage.";
-            width.color = Color.red;
-            height.color = Color.red;
-            length.color = Color.red;
+            width.color = red;
+            height.color = red;
+            length.color = red;
         }
         else
         {
             _text.text =
                 "Perfect! Your bag fits the dimensions of TUI Fly. \n You are one more step closer to your \n holiday destination.";
-            width.color = Color.green;
-            height.color = Color.green;
-            length.color = Color.green;
+
+            width.color = green;
+            height.color = green;
+            length.color = green;
         }
 
         Sequence sequence = DOTween.Sequence();

@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b6ea118-6184-44b3-8547-1ed8d800f2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,7 @@
       <workItem from="1592211469462" duration="598000" />
       <workItem from="1592387067417" duration="3286000" />
       <workItem from="1592648496457" duration="4350000" />
-      <workItem from="1592770532299" duration="369000" />
+      <workItem from="1592770532299" duration="1495000" />
     </task>
     <servers />
   </component>
@@ -122,5 +123,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1592772173644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592772173644" />
+    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1592772145018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592772145018" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs</url>
+          <line>7</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" initialLine="7">
+            <startOffsets>
+              <option value="146" />
+            </startOffsets>
+            <endOffsets>
+              <option value="167" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
