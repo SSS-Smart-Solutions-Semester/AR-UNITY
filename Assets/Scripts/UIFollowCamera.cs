@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class UiFollowCamera : MonoBehaviour
+public class UIFollowCamera : MonoBehaviour
 {
     private Camera _target;
 
