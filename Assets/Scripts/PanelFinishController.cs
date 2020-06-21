@@ -23,13 +23,17 @@ public class PanelFinishController : MonoBehaviour
         measuredHeight = FindObjectOfType<MeasureObject>().measuredHeight;
         measuredLength = FindObjectOfType<MeasureObject>().measuredLength;
     }
-    
-    public void QuitApp()
+
+    public void FinishScan()
     {
         AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer"); 
         AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");      
         activity.Call("onFinishScan", measuredHeight, measuredLength, measuredWidth);
-        //Application.Quit();
+    }
+    
+    public void QuitApp()
+    {
+        Application.Quit();
     }
 
     public void RescanAgain()
