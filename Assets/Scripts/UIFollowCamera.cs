@@ -2,11 +2,14 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class UiFollowCamera : MonoBehaviour
+public class UIFollowCamera : MonoBehaviour
 {
     private Camera _target;
 
     private void Awake() => _target = Camera.main;
 
-    private void Update() => transform.DOLookAt(_target.transform.forward, 0);
+    private void Update()
+    {
+        transform.rotation = _target.transform.rotation;
+    }
 }
