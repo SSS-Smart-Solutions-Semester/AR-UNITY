@@ -25,13 +25,13 @@ public class MeasureObject : MonoBehaviour
     private void Update()
     {
         measuredHeight = ((Mathf.Round(transform.localScale.y * 100) * 10f) / 10f);
-        heightText.SetText(measuredHeight.ToString(CultureInfo.InvariantCulture) + "CM");
+        heightText.SetText(measuredHeight.ToString(CultureInfo.InvariantCulture) + " CM");
 
         measuredWidth = ((Mathf.Round(transform.localScale.z * 100) * 10f) / 10f);
-        widthText.SetText(measuredWidth.ToString(CultureInfo.InvariantCulture) + "CM");
+        widthText.SetText(measuredWidth.ToString(CultureInfo.InvariantCulture) + " CM");
 
         measuredLength = ((Mathf.Round(transform.localScale.x * 100) * 10f) / 10f);
-        lengthText.SetText(measuredLength.ToString(CultureInfo.InvariantCulture) + "CM");
+        lengthText.SetText(measuredLength.ToString(CultureInfo.InvariantCulture) + " CM");
 
         heightText.rectTransform.localScale = new Vector3(1, 1, 1);
         widthText.rectTransform.localScale = new Vector3(1, 1, 1);

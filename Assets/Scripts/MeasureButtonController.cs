@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MeasureButtonController : MonoBehaviour
 {
@@ -25,14 +27,20 @@ public class MeasureButtonController : MonoBehaviour
     private float measuredWidth;
     private float measuredHeight;
     private float measuredLength;
-    
+
+    [SerializeField] private Image luggagePhoto;
     
 
     public MeasureButtonController(WebCamTexture webCamTexture)
     {
         _webCamTexture = webCamTexture;
     }
-    
+
+    private void Start()
+    {
+        luggagePhoto = GetComponent<Image>();
+    }
+
     private void Update()
     {
         measuredWidth = FindObjectOfType<MeasureObject>().measuredWidth;
@@ -79,10 +87,15 @@ public class MeasureButtonController : MonoBehaviour
         Texture2D photo = new Texture2D(_webCamTexture.width, _webCamTexture.height);
         photo.SetPixels(_webCamTexture.GetPixels());
         photo.Apply();
+        
+        Rect rec = new Rect(0, 0, photo.width, photo.height);
+        Sprite.Create(photo,rec,new Vector2(0,0),1);
 
         //Encode to a PNG
         byte[] bytes = photo.EncodeToPNG();
         //Write out the PNG
         File.WriteAllBytes("photo.png", bytes);
+        
+        
     }
 }
