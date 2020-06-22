@@ -76,7 +76,8 @@ public class MeasureButtonController : MonoBehaviour
         sequence.AppendInterval(0.5f);
         sequence.Append(panelFinish.DOMove(middleObject.transform.position, 0.5f));
 
-        //StartCoroutine(TakePhoto());
+        //Comment this is it does not work
+        StartCoroutine(TakePhoto());
     }
 
 
@@ -89,13 +90,13 @@ public class MeasureButtonController : MonoBehaviour
         photo.Apply();
         
         Rect rec = new Rect(0, 0, photo.width, photo.height);
-        Sprite.Create(photo,rec,new Vector2(0,0),1);
+        Sprite sprite = Sprite.Create(photo,rec,new Vector2(0,0),1);
 
         //Encode to a PNG
         byte[] bytes = photo.EncodeToPNG();
         //Write out the PNG
         File.WriteAllBytes("photo.png", bytes);
         
-        
+        luggagePhoto.sprite = sprite;
     }
 }
