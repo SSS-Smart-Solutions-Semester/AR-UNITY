@@ -80,39 +80,39 @@ public class SpiningManager : MonoBehaviour
 		{
 			case 0:
 				prizeImage.sprite = imagesToUse[0];
-				text1.text = "One free drink on board !";
+				text1.text = "One free drink on board!";
 				text2.text = "Congratulations! You have won a free drink for your next flight";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
 			case 45:
 			case 270:
 				prizeImage.sprite = imagesToUse[1];
-				text1.text = "10% discount at musements.com !";
-				text2.text = "Congratulations! You have won a 10% discount at musements.com to use the wey you want";
+				text1.text = "10% discount at musements.com!";
+				text2.text = "Congratulations! You have won a 10% discount at musements.com to use the way you want";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
 			case 90:
 			case 315:
 				prizeImage.sprite = imagesToUse[2];
-				text1.text = "One free snack on board !";
+				text1.text = "One free snack on board!";
 				text2.text = "Congratulations! You have won a free snack for your next flight";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
 			case 135:
 				prizeImage.sprite = imagesToUse[3];
-				text1.text = "Fast lane at security check !";
+				text1.text = "Fast lane at security check!";
 				text2.text = "Congratulations! You have won a free pass to go faster through security";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
 			case 180:
 				prizeImage.sprite = imagesToUse[4];
-				text1.text = "10% discount at bagageonline.nl !";
-				text2.text = "Congratulations! You have won a 10% discount at bagageonline.nl to use the wey you want";
+				text1.text = "10% discount at bagageonline.nl!";
+				text2.text = "Congratulations! You have won a 10% discount at bagageonline.nl to use the way you want";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
 			case 225:
 				prizeImage.sprite = imagesToUse[3];
-				text1.text = "Priority boarding !";
+				text1.text = "Priority boarding!";
 				text2.text = "Congratulations! You have won priority boarding for your next flight";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;
