@@ -41,11 +41,6 @@ public class SpiningManager : MonoBehaviour
 		StartCoroutine(Spin());
 	}
 	
-	public void OnTapToContinue()
-	{
-		
-	}
-
 	private IEnumerator Spin()
 	{
 
@@ -105,7 +100,7 @@ public class SpiningManager : MonoBehaviour
 				break;
 			case 135:
 				prizeImage.sprite = imagesToUse[3];
-				text1.text = "First lane at security check !";
+				text1.text = "Fast lane at security check !";
 				text2.text = "Congratulations! You have won a free pass to go faster through security";
 				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
 				break;

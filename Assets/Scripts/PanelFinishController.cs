@@ -31,9 +31,16 @@ public class PanelFinishController : MonoBehaviour
 
     public void StartPrizeWheel()
     {
-        Sequence sequence = DOTween.Sequence();
-        sequence.AppendInterval(0.3f);
-        sequence.Append(panelPrizeWheel.DOMove(middleObject.transform.position, 0.5f));
+        if (measuredHeight > 55 || measuredWidth > 20 || measuredLength > 40)
+        {
+            FinishScan();
+        }
+        else
+        {
+            Sequence sequence = DOTween.Sequence();
+            sequence.AppendInterval(0.3f);
+            sequence.Append(panelPrizeWheel.DOMove(middleObject.transform.position, 0.5f));
+        }
     }
 
     public void FinishScan()

@@ -1078,7 +1078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000024796, y: -0.000030518}
+  m_AnchoredPosition: {x: 0, y: -0.000030518}
   m_SizeDelta: {x: -200.00003, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195038897
@@ -1357,7 +1357,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 247683923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1665362964}
+        m_MethodName: OnRewardButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &247683923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2210,7 +2221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000088062, y: -400}
+  m_AnchoredPosition: {x: -0.000061035156, y: -400}
   m_SizeDelta: {x: -200.00003, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592053992
@@ -5418,6 +5429,7 @@ MonoBehaviour:
   panelFinish: {fileID: 1698229132}
   panelPrizeWheel: {fileID: 1130158136}
   panelContinue: {fileID: 1582096883}
+  panelMail: {fileID: 384346814}
   topObject: {fileID: 568528010}
   middleObject: {fileID: 1993318495}
   width: {fileID: 878670923}
