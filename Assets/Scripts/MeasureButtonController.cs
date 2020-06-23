@@ -72,12 +72,12 @@ public class MeasureButtonController : MonoBehaviour
             length.color = green;
         }
 
-        Sequence sequence = DOTween.Sequence();
+        var sequence = DOTween.Sequence();
         sequence.AppendInterval(0.5f);
         sequence.Append(panelFinish.DOMove(middleObject.transform.position, 0.5f));
 
         //Comment this is it does not work
-        StartCoroutine(TakePhoto());
+        //StartCoroutine(TakePhoto());
     }
 
 
@@ -85,15 +85,15 @@ public class MeasureButtonController : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        Texture2D photo = new Texture2D(_webCamTexture.width, _webCamTexture.height);
+        var photo = new Texture2D(_webCamTexture.width, _webCamTexture.height);
         photo.SetPixels(_webCamTexture.GetPixels());
         photo.Apply();
         
-        Rect rec = new Rect(0, 0, photo.width, photo.height);
-        Sprite sprite = Sprite.Create(photo,rec,new Vector2(0,0),1);
+        var rec = new Rect(0, 0, photo.width, photo.height);
+        var sprite = Sprite.Create(photo,rec,new Vector2(photo.width,photo.height),100);
 
         //Encode to a PNG
-        byte[] bytes = photo.EncodeToPNG();
+        var bytes = photo.EncodeToPNG();
         //Write out the PNG
         File.WriteAllBytes("photo.png", bytes);
         

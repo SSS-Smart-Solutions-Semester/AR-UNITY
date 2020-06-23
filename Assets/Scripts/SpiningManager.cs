@@ -65,18 +65,14 @@ public class SpiningManager : MonoBehaviour
 
 		}
 
-		if (Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z) % _totalAngle != 0
-		) //when the indicator stop between 2 numbers,it will add aditional step 
+		if (Math.Abs(Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z) % _totalAngle) > 0)
 			prizeWheel.transform.Rotate(0, 0, _totalAngle / 2);
 
-		_finalAngle = Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z); //round off euler angle of wheel value
-
-		print(_finalAngle);
-
-		//Prize check
+		_finalAngle = Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z); 
+		
 		for (var i = 0; i < section; i++)
 		{
-			if (_finalAngle != i * _totalAngle) continue;
+			if (Math.Abs(_finalAngle - i * _totalAngle) > 0) continue;
 			winText.text = prizeName[i];
 			
 			var sequence = DOTween.Sequence();

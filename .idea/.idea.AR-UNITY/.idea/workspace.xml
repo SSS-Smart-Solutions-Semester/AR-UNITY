@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b6ea118-6184-44b3-8547-1ed8d800f2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AR-UNITY/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreview.apk.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PanelFinishController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PanelFinishController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +49,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/KeepCubeOnGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActivateHelpPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeasureObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIFollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UiFollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PanelFinishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpiningManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeasureButtonController.cs" />
       </list>
     </option>
   </component>
