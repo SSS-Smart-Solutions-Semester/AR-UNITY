@@ -3,17 +3,23 @@ using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class SpiningManager : MonoBehaviour
 {
 
 	[SerializeField] private GameObject prizeWheel;
-	
+	[SerializeField] private RectTransform panelReward;
+	[SerializeField] private Image prizeImage;
+	[SerializeField] private TextMeshProUGUI text1;
+	[SerializeField] private TextMeshProUGUI text2;
+
+	[SerializeField] private Sprite[] imagesToUse;
+
 	private int _randVal;
 	private float _timeInterval;
 	private bool _isCoroutine;
-	private bool _coroutineHasFinished = false;
 	private int _finalAngle;
 
 	public TextMeshProUGUI winText;
@@ -23,16 +29,21 @@ public class SpiningManager : MonoBehaviour
 
 	private void Start()
 	{
+		panelReward.DOScale(new Vector3(0, 0, 0), 0);
 		_isCoroutine = true;
 		_totalAngle = 360 / section;
-		_coroutineHasFinished = false;
 	}
 
-	public void OnstartSpinButtonPress()
+	public void OnStartSpinButtonPress()
 	{
 		if (!_isCoroutine) return;
-		
+
 		StartCoroutine(Spin());
+	}
+	
+	public void OnTapToContinue()
+	{
+		
 	}
 
 	private IEnumerator Spin()
@@ -68,22 +79,49 @@ public class SpiningManager : MonoBehaviour
 		if (Math.Abs(Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z) % _totalAngle) > 0)
 			prizeWheel.transform.Rotate(0, 0, _totalAngle / 2);
 
-		_finalAngle = Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z); 
+		_finalAngle = Mathf.RoundToInt(prizeWheel.transform.eulerAngles.z);
 		
-		for (var i = 0; i < section; i++)
+		switch (_finalAngle)
 		{
-			if (Math.Abs(_finalAngle - i * _totalAngle) > 0) continue;
-			winText.text = prizeName[i];
-			
-			var sequence = DOTween.Sequence();
-			sequence.AppendInterval(0.2f).OnComplete(() =>
-			{
-				FindObjectOfType<PanelFinishController>().QuitApp();
-				print("Finished");
-			});
+			case 0:
+				prizeImage.sprite = imagesToUse[0];
+				text1.text = "One free drink on board !";
+				text2.text = "Congratulations! You have won a free drink for your next flight";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
+			case 45:
+			case 270:
+				prizeImage.sprite = imagesToUse[1];
+				text1.text = "10% discount at musements.com !";
+				text2.text = "Congratulations! You have won a 10% discount at musements.com to use the wey you want";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
+			case 90:
+			case 315:
+				prizeImage.sprite = imagesToUse[2];
+				text1.text = "One free snack on board !";
+				text2.text = "Congratulations! You have won a free snack for your next flight";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
+			case 135:
+				prizeImage.sprite = imagesToUse[3];
+				text1.text = "First lane at security check !";
+				text2.text = "Congratulations! You have won a free pass to go faster through security";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
+			case 180:
+				prizeImage.sprite = imagesToUse[4];
+				text1.text = "10% discount at bagageonline.nl !";
+				text2.text = "Congratulations! You have won a 10% discount at bagageonline.nl to use the wey you want";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
+			case 225:
+				prizeImage.sprite = imagesToUse[3];
+				text1.text = "Priority boarding !";
+				text2.text = "Congratulations! You have won priority boarding for your next flight";
+				panelReward.DOScale(new Vector3(1, 1, 1), 0.2f);
+				break;
 		}
-
-
 		_isCoroutine = true;
 	}
 }

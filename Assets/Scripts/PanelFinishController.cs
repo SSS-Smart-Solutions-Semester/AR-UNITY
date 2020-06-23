@@ -7,10 +7,13 @@ using UnityEngine;
 public class PanelFinishController : MonoBehaviour
 {
     [SerializeField] private RectTransform panelFinish;
+    [SerializeField] private RectTransform panelPrizeWheel;
+    [SerializeField] private RectTransform panelContinue;
+    [SerializeField] private RectTransform panelMail;
+    
     [SerializeField] private RectTransform topObject;
     [SerializeField] private RectTransform middleObject;
-    [SerializeField] private RectTransform panelPrizeWheel;
-    
+
     [SerializeField] private TextMeshProUGUI width;
     [SerializeField] private TextMeshProUGUI height;
     [SerializeField] private TextMeshProUGUI length;
@@ -38,6 +41,20 @@ public class PanelFinishController : MonoBehaviour
         AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer"); 
         AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");      
         activity.Call("onFinishScan", measuredHeight, measuredLength, measuredWidth);
+    }
+
+    public void OnFinishButtonPress()
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.AppendInterval(0.3f);
+        sequence.Append(panelContinue.DOMove(middleObject.transform.position, 0.5f));
+    }
+    
+    public void OnRewardButtonPress()
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.AppendInterval(0.3f);
+        sequence.Append(panelMail.DOMove(middleObject.transform.position, 0.5f));
     }
     
     public void QuitApp()
