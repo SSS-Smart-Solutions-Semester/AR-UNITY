@@ -8,6 +8,8 @@ public class PanelFinishController : MonoBehaviour
 {
     [SerializeField] private RectTransform panelFinish;
     [SerializeField] private RectTransform topObject;
+    [SerializeField] private RectTransform middleObject;
+    [SerializeField] private RectTransform panelPrizeWheel;
     
     [SerializeField] private TextMeshProUGUI width;
     [SerializeField] private TextMeshProUGUI height;
@@ -22,6 +24,13 @@ public class PanelFinishController : MonoBehaviour
         measuredWidth = FindObjectOfType<MeasureObject>().measuredWidth;
         measuredHeight = FindObjectOfType<MeasureObject>().measuredHeight;
         measuredLength = FindObjectOfType<MeasureObject>().measuredLength;
+    }
+
+    public void StartPrizeWheel()
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.AppendInterval(0.3f);
+        sequence.Append(panelPrizeWheel.DOMove(middleObject.transform.position, 0.5f));
     }
 
     public void FinishScan()

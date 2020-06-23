@@ -439,6 +439,7 @@
           <e p="MeasureButtonController.cs" t="Include" />
           <e p="MeasureObject.cs" t="Include" />
           <e p="PanelFinishController.cs" t="Include" />
+          <e p="SpiningManager.cs" t="Include" />
           <e p="UIFollowCamera.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
